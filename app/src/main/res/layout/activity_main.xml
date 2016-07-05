@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:text="00:00:00"
         android:textSize="25dp"
-        android:layout_centerVertical="true"
+        android:layout_below="@+id/circle_minute"
         android:layout_centerHorizontal="true"
         android:id="@+id/text_view1" />
 
@@ -32,5 +32,19 @@
         android:text="Reset"
         android:id="@+id/button_reset"
         android:layout_below="@+id/button_start"
+        android:layout_centerHorizontal="true" />
+
+    <pl.szon.stopwatch.Circle
+        android:layout_width="680px"
+        android:layout_height="680px"
+        android:id="@+id/circle_minute"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <pl.szon.stopwatch.Circle
+        android:layout_width="680px"
+        android:layout_height="680px"
+        android:id="@+id/circle_second"
+        android:layout_alignTop="@id/circle_minute"
         android:layout_centerHorizontal="true" />
 </RelativeLayout>
